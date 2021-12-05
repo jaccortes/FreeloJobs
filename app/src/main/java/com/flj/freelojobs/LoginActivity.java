@@ -77,7 +77,7 @@ public class LoginActivity extends AppCompatActivity {
     public void goToRegistrese(View view){
         Intent intencionRegistrese = new Intent(this, RegistreseActivity.class);
         intencionRegistrese.putExtra("param1","test1");
-        intencionRegistrese.putExtra("param2",1234);
+        intencionRegistrese.putExtra("param2",12345);
         intencionRegistrese.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intencionRegistrese);
     }
