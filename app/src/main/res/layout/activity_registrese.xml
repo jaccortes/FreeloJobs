@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:actionBarNavMode="standard"
+    tools:context=".RegistreseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Registro"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="@dimen/texto_24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:background="#725C9386"
+            android:scaleType="fitCenter"
+            app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextPhone3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Telefóno"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="PassWord"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ED16603A"
+            android:backgroundTint="#DC2BA87D"
+            android:backgroundTintMode="add"
+            android:foregroundTint="#00BCD4"
+            android:onClick="GuardarDatos"
+            android:shadowColor="#00BCD4"
+            android:text="Guardar datos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#03A9F4"
+            android:textColorHint="#A403A9F4"
+            android:textColorLink="#03A9F4"
+            android:textCursorDrawable="@color/blue1"
+            android:textStyle="bold"
+            app:icon="@drawable/ic_producto"
+            app:iconTint="#FFFFFF"
+            app:rippleColor="#5DEFB5"
+            app:strokeColor="#00BCD4" />
+
+    </LinearLayout>
+</ScrollView>

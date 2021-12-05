@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Freelo Jobs</string>
+    <string name="app_name_login">Freelo Jobs - LOGIN</string>
+    <string name="app_name_login_registrarse">REGISTRARSE</string>
+
+    <string name="horizontal_scrollview">Buscar Trabajo</string>
+    <string name="previous">Previous</string>
+    <string name="producto">Producto</string>
+    <string name="scrollview">Crear Trabajo</string>
+    <string name="saludo">Trabajo Cerca de Ti</string>
+    <string name="saludo2">Bienvenido</string>
+    <string name="micuenta">Mi Cuenta</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="buscaj">Buscar Trabajo</string>
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        tools:context=".ProductoActivity">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goToActivityMain"
+            android:text="Volver"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/input_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="Direccion"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/input_nombre2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="Direccion"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/input_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:layout_below="@+id/input_nombre"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Descripción"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/texto_categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_descripcion"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="150dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Trabajo"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinner_categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/texto_categoria"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/spinner_marca"
+            android:entries="@array/lista_categoria" />
+
+        <TextView
+            android:id="@+id/texto_marca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_descripcion"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/texto_categoria"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:text="Tipo"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinner_marca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/texto_marca"
+            android:layout_alignStart="@+id/texto_marca"
+            android:layout_alignLeft="@+id/texto_marca"
+            android:layout_alignParentRight="true"
+            android:entries="@array/lista_marca" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner_categoria"
+            android:layout_alignParentLeft="true"
+            android:hint="Tipo Contratacion"
+            android:paddingTop="10dp"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinner_lista_proveedores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_alignParentLeft="true"
+            android:entries="@array/lista_proveedores"
+            android:paddingBottom="10dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/spinner_lista_proveedores"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:onClick="agregarDatos"
+                android:text="Agregar"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/linearLayout1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="limpiarDatos"
+                android:text="Limpiar"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

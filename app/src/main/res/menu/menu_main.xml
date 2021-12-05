@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mnu_buscaj"
+        android:icon="@mipmap/ic_jobsearch3_foreground"
+        android:title="@string/buscaj"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mnu_producto"
+        android:icon="@mipmap/ic_jobs8_foreground"
+        android:title="@string/producto"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mnu_horizontal_scrollview"
+        android:title="@string/horizontal_scrollview" />
+    <item
+        android:id="@+id/mnu_scrollview"
+        android:title="@string/scrollview" />
+    <item
+        android:id="@+id/mnu_micuenta"
+        android:title="@string/micuenta" />
+</menu>

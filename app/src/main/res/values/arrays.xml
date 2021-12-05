@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lista_categoria">
+        <item>Seleccione...</item>
+        <item>Aseo</item>
+        <item>Informatica</item>
+        <item>Electrico</item>
+        <item>Plomeria</item>
+        <item>Mudanza</item>
+        <item>Escolar</item>
+        <item>Niñera</item>
+        <item>Cerrajero</item>
+    </string-array>
+
+    <string-array name="lista_marca">
+        <item>Seleccione...</item>
+        <item>Inmediato</item>
+        <item>Planeado</item>
+        <item>Temporal</item>
+        <item>Permanente</item>
+    </string-array>
+
+    <string-array name="lista_proveedores">
+        <item>Seleccione...</item>
+        <item>Por Obra o Labor</item>
+        <item>Por Dias</item>
+        <item>Contrato a Termino Fijo</item>
+        <item>Contrato a Indefinido</item>
+    </string-array>
+
+    <string-array name="nivel_ingles">
+        <item>Seleccione...</item>
+        <item>Bueno</item>
+        <item>Regular</item>
+        <item>No tan bueno</item>
+    </string-array>
+
+    <string-array name="preloaded_fonts"></string-array>
+</resources>
