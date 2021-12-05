@@ -10,8 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HolaMundo">
         <activity
+            android:name=".MisFreelosActivity"
+            android:exported="false"
+            android:label="Mis Freelos" />
+        <activity
+            android:name=".MiCuentaActivity"
+            android:exported="false"
+            android:label="Mi Cuenta" />
+        <activity
+            android:name=".BuscarFreeloActivity"
+            android:exported="false"
+            android:label="Buscar Freelo" />
+        <activity
+            android:name=".CrearFreeloActivity"
+            android:exported="false"
+            android:label="Crear Freelo" />
+        <activity
             android:name=".RegistreseActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="REGISTRARSE" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">
@@ -48,7 +65,8 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="Freelo Jobs - Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

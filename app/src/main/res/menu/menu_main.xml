@@ -3,22 +3,25 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/mnu_buscaj"
-        android:icon="@mipmap/ic_jobsearch3_foreground"
-        android:title="@string/buscaj"
+        android:id="@+id/mnu_buscajicon"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/buscjob"
         app:showAsAction="always" />
     <item
-        android:id="@+id/mnu_producto"
-        android:icon="@mipmap/ic_jobs8_foreground"
-        android:title="@string/producto"
+        android:id="@+id/mnu_crearjobicon"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="@string/creajob"
         app:showAsAction="always" />
     <item
-        android:id="@+id/mnu_horizontal_scrollview"
-        android:title="@string/horizontal_scrollview" />
+        android:id="@+id/mnu_creajobmenu"
+        android:title="@string/creajob" />
     <item
-        android:id="@+id/mnu_scrollview"
-        android:title="@string/scrollview" />
+        android:id="@+id/mnu_buscjob"
+        android:title="@string/buscjob" />
+    <item
+        android:id="@+id/mnu_Misfreelo"
+        android:title="@string/Misfreelo" />
     <item
         android:id="@+id/mnu_micuenta"
-        android:title="@string/micuenta" />
+        android:title="@string/Micuenta" />
 </menu>

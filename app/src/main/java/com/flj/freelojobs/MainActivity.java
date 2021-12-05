@@ -39,24 +39,26 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem menuItem) {
         int id = menuItem.getItemId();
 
-        if(id == R.id.mnu_producto) {
-            Intent newIntent = new Intent(this, ProductoActivity.class);
-            newIntent.putExtra("msg", "Hola MinTIC");
-            newIntent.putExtra("year", 2021);
+        if(id == R.id.mnu_crearjobicon || id == R.id.mnu_creajobmenu) {
+            Intent newIntent = new Intent(this, CrearFreeloActivity.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
         }
-        else if(id == R.id.mnu_horizontal_scrollview) {
-            Intent newIntent = new Intent(this, HorizontalScrollViewActivity.class);
+        else if(id == R.id.mnu_buscjob || id == R.id.mnu_buscajicon) {
+            Intent newIntent = new Intent(this, BuscarFreeloActivity.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
         }
-        else if(id == R.id.mnu_scrollview) {
-            Intent newIntent = new Intent(this, ScrollViewActivity.class);
+        else if(id == R.id.mnu_Misfreelo) {
+            Intent newIntent = new Intent(this, MisFreelosActivity.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
         }
-
+        else if(id == R.id.mnu_micuenta) {
+            Intent newIntent = new Intent(this, MiCuentaActivity.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+        }
         return super.onOptionsItemSelected(menuItem);
     }
 
