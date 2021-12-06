@@ -6,6 +6,16 @@
     <string name="buscjob">Buscar Freelo</string>
     <string name="Micuenta">Mi Cuenta</string>
     <string name="Misfreelo">Mis Freelos</string>
+    <string-array name="listaTipoTrabajo">
+        <item>Seleccione...</item>
+        <item>Electrico</item>
+        <item>Plomeria</item>
+        <item>Pintura</item>
+        <item>Informatico</item>
+        <item>Carga o Trasteo</item>
+        <item>Limpieza</item>
+        <item>Mensajeria</item>
+    </string-array>
 
 
 

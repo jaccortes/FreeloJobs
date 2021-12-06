@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,7 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
-    private TextView t1, t2, txtRegisterse;
+    private TextView t1, textejemplolinkurl, txtRegisterse;
     private EditText et1, et2;
     private ImageView iv1;
     private Button b1;
@@ -32,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
         settings = getSharedPreferences("id", Context.MODE_PRIVATE);
 
         t1 = (TextView) findViewById(R.id.textView);
-//        t2 = (TextView) findViewById(R.id.textView3);
+        textejemplolinkurl = (TextView) findViewById(R.id.txtlinkejemplo);
         txtRegisterse = findViewById(R.id.txtviewRegisterse);
         et1 = (EditText) findViewById(R.id.editTextTextPersonName);
         et2 = (EditText) findViewById(R.id.editTextTextPassword);
@@ -41,7 +43,9 @@ public class LoginActivity extends AppCompatActivity {
         b1.setText(R.string.iniciar_sesion);
         t1.setText("     FREELOJOBS\nTrabajo Cerca de Ti");
         t1.setTextSize(20);
-        String texto = "Olvide mi contraseña";
+        String miLink = "<a href='https://jaccortes3.wixsite.com/freelojobs'>FreloJobs.com</a>";
+        textejemplolinkurl.setMovementMethod(LinkMovementMethod.getInstance());
+        textejemplolinkurl.setText(Html.fromHtml(miLink));
 //        t2.setText(Html.fromHtml(texto));
 //        t2.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -84,7 +88,7 @@ public class LoginActivity extends AppCompatActivity {
     public void iniciarSesion(View view) {
         String usuario = et1.getText().toString();
         String clave = et2.getText().toString();
-        if (et1.getText().toString().equals("admin") && et2.getText().toString().equals("admin")) {
+        if (et1.getText().toString().equals("a") && et2.getText().toString().equals("a")) {
             Intent newIntent = new Intent(this, MainActivity.class);
             startActivity(newIntent);
             finish();

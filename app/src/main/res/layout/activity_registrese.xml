@@ -72,16 +72,11 @@
 
         <Button
             android:id="@+id/button4"
-            style="@style/Widget.AppCompat.Button.Small"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginBottom="10dp"
-            android:background="#ED16603A"
             android:backgroundTint="#DC2BA87D"
-            android:backgroundTintMode="add"
-            android:foregroundTint="#00BCD4"
             android:onClick="GuardarDatos"
-            android:shadowColor="#00BCD4"
             android:text="Guardar datos"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textColor="#FFFFFF"
@@ -91,9 +86,7 @@
             android:textCursorDrawable="@color/blue1"
             android:textStyle="bold"
             app:icon="@drawable/ic_producto"
-            app:iconTint="#FFFFFF"
-            app:rippleColor="#5DEFB5"
-            app:strokeColor="#00BCD4" />
+            app:iconTint="#FFFFFF" />
 
     </LinearLayout>
 </ScrollView>

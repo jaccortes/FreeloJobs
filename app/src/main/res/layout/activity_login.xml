@@ -83,9 +83,8 @@
                 <ImageButton
                     android:id="@+id/imageButton"
                     android:layout_width="392dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="71dp"
                     android:background="#6B217346"
-                    android:onClick="iniciarSesion"
                     app:srcCompat="@drawable/ic_new_launcher_foreground" />
 
 <!--                <TextView-->
@@ -107,7 +106,20 @@
                     android:onClick="goToRegistrese"
                     android:text="txtviewRegisterse"
                     android:textAlignment="center"
-                    android:textSize="34sp" />
+                    android:textColorLink="#3F51B5"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/txtlinkejemplo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="auto"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

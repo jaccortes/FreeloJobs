@@ -30,34 +30,153 @@
             android:textSize="34sp"
             android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/editTexttipotrabajoetiqueta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:editable="false"
+            android:ems="18"
+            android:enabled="true"
+            android:text="Tipo de Trabajo"
+            android:textAllCaps="true"
+            android:textColor="#1C3575"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/tipotrab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/listaTipoTrabajo" />
+
+        <TextView
+            android:id="@+id/editTexttipotrabajoetiqueta5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:editable="false"
+            android:ems="18"
+            android:enabled="true"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/editTexttipotrabajoetiqueta2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:editable="false"
+            android:ems="18"
+            android:enabled="true"
+            android:text="Descripcion"
+            android:textAllCaps="true"
+            android:textColor="#1C3575"
+            android:textSize="20sp" />
+
         <EditText
-            android:id="@+id/editTextTextPersonName1"
+            android:id="@+id/editTextTrabajo"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textLongMessage|textMultiLine|textPersonName"
+            android:lines="3"
+            android:maxLength="200"
+            android:maxLines="3" />
+
+        <TextView
+            android:id="@+id/editTexttipotrabajoetiqueta6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:editable="false"
+            android:ems="18"
+            android:enabled="true"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/editTexttipotrabajoetiqueta3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:editable="false"
+            android:ems="18"
+            android:enabled="true"
+            android:text="Precio"
+            android:textAllCaps="true"
+            android:textColor="#1C3575"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextPrecio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Trabajo"
-            android:inputType="textPersonName" />
+            android:inputType="number|textPersonName" />
+
+        <TextView
+            android:id="@+id/editTexttipotrabajoetiqueta7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:editable="false"
+            android:ems="18"
+            android:enabled="true"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/editTexttipotrabajoetiqueta4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:editable="false"
+            android:ems="18"
+            android:enabled="true"
+            android:text="Telefono"
+            android:textAllCaps="true"
+            android:textColor="#1C3575"
+            android:textSize="20sp" />
+
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/editTexttelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Precio"
-            android:inputType="textPersonName" />
-        <EditText
-            android:id="@+id/editTextTextPersonName3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Telefono"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName|phone" />
+
         <com.google.android.gms.maps.MapView
             android:id="@+id/mapView"
             android:layout_width="match_parent"
-            android:layout_height="322dp"
+            android:layout_height="157dp"
             android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DC2BA87D"
+            android:onClick="GuardarDatos"
+            android:text="Guardar datos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#03A9F4"
+            android:textColorHint="#A403A9F4"
+            android:textColorLink="#03A9F4"
+            android:textCursorDrawable="@color/blue1"
+            android:textStyle="bold"
+            app:icon="@drawable/ic_producto"
+            app:iconTint="#FFFFFF" />
+
     </LinearLayout>
 </ScrollView>

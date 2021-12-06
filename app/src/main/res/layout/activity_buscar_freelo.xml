@@ -44,5 +44,24 @@
             android:layout_width="match_parent"
             android:layout_height="322dp"
             android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DC2B85A8"
+            android:onClick="GuardarDatos"
+            android:text="Postularse"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#03A9F4"
+            android:textColorHint="#A403A9F4"
+            android:textColorLink="#03A9F4"
+            android:textCursorDrawable="@color/blue1"
+            android:textStyle="bold"
+            app:icon="@drawable/ic_producto"
+            app:iconTint="#FFFFFF" />
     </LinearLayout>
 </ScrollView>
