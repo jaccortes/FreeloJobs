@@ -5,6 +5,7 @@
     <string name="creajob">Crear Freelo</string>
     <string name="buscjob">Buscar Freelo</string>
     <string name="Micuenta">Mi Cuenta</string>
+    <string name="Micuentaadmin">Lista de Usuarios - Administrador</string>
     <string name="Misfreelo">Mis Freelos</string>
     <string-array name="listaTipoTrabajo">
         <item>Seleccione...</item>
@@ -16,8 +17,10 @@
         <item>Limpieza</item>
         <item>Mensajeria</item>
     </string-array>
+    <string name="dialog_message">¿Desea Postularse a Este Trabajo?</string>
+    <string name="dialog_messageDel">"¿Quiere Eliminar esta Postulacion?"</string>
 
-
+    <string name="dialog_title">!!!Confirmar!!!</string>
 
     <string name="horizontal_scrollview">Buscar Trabajo</string>
     <string name="previous">Previous</string>
@@ -119,4 +122,7 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="mi_cuenta">Mi Cuenta</string>
+    <string name="banner">banner</string>
+    <string name="lista_de_freelos_administrador">Lista de Freelos Administrador</string>
 </resources>

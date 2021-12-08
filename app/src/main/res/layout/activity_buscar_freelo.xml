@@ -19,49 +19,60 @@
         <TextView
             android:id="@+id/textView16"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="52dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:text="Buscar Freelo"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textAppearance="@style/mi_estilo"
-            android:textColor="#9533739F"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#173750"
             android:textSize="34sp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName4"
+        <TextView
+            android:id="@+id/editTexttipotrabajoetiqueta4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:ems="10"
-            android:hint="Trabajo"
-            android:inputType="textPersonName" />
+            android:clickable="false"
+            android:editable="false"
+            android:ems="18"
+            android:enabled="true"
+            android:text="Tipo de Trabajo"
+            android:textAllCaps="true"
+            android:textColor="#1C3575"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-        <com.google.android.gms.maps.MapView
-            android:id="@+id/mapView"
+        <Spinner
+            android:id="@+id/tipotrab2"
             android:layout_width="match_parent"
-            android:layout_height="322dp"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#DC2B85A8"
-            android:onClick="GuardarDatos"
-            android:text="Postularse"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:textColor="#FFFFFF"
-            android:textColorHighlight="#03A9F4"
-            android:textColorHint="#A403A9F4"
-            android:textColorLink="#03A9F4"
-            android:textCursorDrawable="@color/blue1"
-            android:textStyle="bold"
-            app:icon="@drawable/ic_producto"
-            app:iconTint="#FFFFFF" />
+            android:background="#CAD8A4"
+            android:entries="@array/listaTipoTrabajo" />
+
+        <TextView
+            android:id="@+id/editTexttipotrabajoetiqueta8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:editable="false"
+            android:ems="18"
+            android:enabled="true"
+            android:textAllCaps="true" />
+
+        <ListView
+            android:id="@+id/listadefeelostotal"
+            android:layout_width="match_parent"
+            android:layout_height="532dp"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp" />
+
     </LinearLayout>
 </ScrollView>

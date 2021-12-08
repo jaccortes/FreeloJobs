@@ -53,11 +53,12 @@
                     android:id="@+id/editTextTextPersonName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@android:drawable/sym_action_email"
+                    android:drawableLeft="@android:drawable/sym_action_call"
+                    android:drawablePadding="10dp"
                     android:drawableTint="#4FEAE5"
                     android:ems="10"
-                    android:hint=" Correo"
-                    android:inputType="textPersonName"
+                    android:hint=" Celular"
+                    android:inputType="number"
                     android:textColorLink="#4CAF50" />
 
                 <EditText
@@ -65,6 +66,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@android:drawable/ic_lock_lock"
+                    android:drawablePadding="10dp"
                     android:ems="10"
                     android:hint="Contraseña"
                     android:inputType="textPassword" />

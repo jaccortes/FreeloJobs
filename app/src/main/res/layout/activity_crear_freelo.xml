@@ -17,16 +17,18 @@
 
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/textView18"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="52dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:text="Crear Freelo"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textAppearance="@style/mi_estilo"
-            android:textColor="#95339F3E"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#173750"
             android:textSize="34sp"
             android:textStyle="bold" />
 
@@ -42,14 +44,16 @@
             android:text="Tipo de Trabajo"
             android:textAllCaps="true"
             android:textColor="#1C3575"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/tipotrab"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:entries="@array/listaTipoTrabajo" />
+            android:entries="@array/listaTipoTrabajo"
+            android:minHeight="48dp" />
 
         <TextView
             android:id="@+id/editTexttipotrabajoetiqueta5"
@@ -74,18 +78,22 @@
             android:text="Descripcion"
             android:textAllCaps="true"
             android:textColor="#1C3575"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editTextTrabajo"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
+            android:gravity="top"
             android:inputType="textLongMessage|textMultiLine|textPersonName"
             android:lines="3"
             android:maxLength="200"
-            android:maxLines="3" />
+            android:maxLines="3"
+            android:textAlignment="viewStart"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/editTexttipotrabajoetiqueta6"
@@ -110,7 +118,8 @@
             android:text="Precio"
             android:textAllCaps="true"
             android:textColor="#1C3575"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editTextPrecio"
@@ -118,7 +127,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="number|textPersonName" />
+            android:inputType="number|textPersonName"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/editTexttipotrabajoetiqueta7"
@@ -132,7 +142,7 @@
             android:textAllCaps="true" />
 
         <TextView
-            android:id="@+id/editTexttipotrabajoetiqueta4"
+            android:id="@+id/editTexttipotrabajoetiqueta9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -140,34 +150,63 @@
             android:editable="false"
             android:ems="18"
             android:enabled="true"
-            android:text="Telefono"
+            android:text="Ubicacion"
             android:textAllCaps="true"
             android:textColor="#1C3575"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTexttelefono"
+            android:id="@+id/editTextlatitud"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName|phone" />
+            android:hint="Latitud"
+            android:inputType="number|textPersonName"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-        <com.google.android.gms.maps.MapView
-            android:id="@+id/mapView"
+        <EditText
+            android:id="@+id/editTextLongitud"
             android:layout_width="match_parent"
-            android:layout_height="157dp"
-            android:layout_weight="1" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Longitud"
+            android:inputType="number|textPersonName"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/button5"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DC2B5DA8"
+            android:onClick="GuardarDatos"
+            android:text="Buscar Ubicacion"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#03A9F4"
+            android:textColorHint="#A403A9F4"
+            android:textColorLink="#03A9F4"
+            android:textCursorDrawable="@color/blue1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:icon="@android:drawable/ic_dialog_map"
+            app:iconTint="#FFFFFF"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:backgroundTint="#DC2BA87D"
             android:onClick="GuardarDatos"
-            android:text="Guardar datos"
+            android:text="Crear Freelo"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textColor="#FFFFFF"
             android:textColorHighlight="#03A9F4"
@@ -176,7 +215,8 @@
             android:textCursorDrawable="@color/blue1"
             android:textStyle="bold"
             app:icon="@drawable/ic_producto"
-            app:iconTint="#FFFFFF" />
+            app:iconTint="#FFFFFF"
+            tools:ignore="TextContrastCheck" />
 
     </LinearLayout>
 </ScrollView>

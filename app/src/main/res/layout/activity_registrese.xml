@@ -17,11 +17,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="Registro"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:text="Registrarse"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:textSize="@dimen/texto_24sp"
+            android:textColor="#173750"
+            android:textSize="34sp"
             android:textStyle="bold" />
 
         <ImageView
@@ -29,46 +32,71 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginBottom="10dp"
-            android:background="#725C9386"
+            android:background="#721FB591"
             android:scaleType="fitCenter"
             app:srcCompat="@android:drawable/ic_menu_myplaces" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName3"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Nombre"
-            android:inputType="textPersonName"
-            android:minHeight="48dp" />
+            android:layout_height="match_parent"
+            android:hint="Nombre">
 
-        <EditText
-            android:id="@+id/editTextPhone3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Telefóno"
-            android:inputType="phone"
-            android:maxLength="10"
-            android:minHeight="48dp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nombreusu"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:drawableStart="@drawable/ic_man"
+                android:drawablePadding="20dp"
+                android:drawableTint="#144B8A"
+                android:inputType="textPersonName" />
 
-        <EditText
-            android:id="@+id/editTextTextEmailAddress3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Correo electrónico"
-            android:inputType="textEmailAddress"
-            android:minHeight="48dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <EditText
-            android:id="@+id/editTextTextPassWord"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="PassWord"
-            android:inputType="textPassword"
-            android:minHeight="48dp" />
+            android:layout_height="match_parent"
+            android:hint="Telefono">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/telefonousu"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:drawableLeft="@drawable/ic_telf"
+                android:drawablePadding="20dp"
+                android:drawableTint="#1E416C"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Correo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_mail"
+                android:drawablePadding="20dp"
+                android:drawableTint="#1E416C"
+                android:inputType="textEmailSubject" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="PassWord">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_pass"
+                android:drawablePadding="20dp"
+                android:drawableTint="#1E416C"
+                android:inputType="textWebPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/button4"
@@ -77,7 +105,7 @@
             android:layout_marginBottom="10dp"
             android:backgroundTint="#DC2BA87D"
             android:onClick="GuardarDatos"
-            android:text="Guardar datos"
+            android:text="Crear Usuario"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textColor="#FFFFFF"
             android:textColorHighlight="#03A9F4"

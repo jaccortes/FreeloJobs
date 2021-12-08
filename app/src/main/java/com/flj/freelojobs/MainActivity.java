@@ -3,16 +3,23 @@ package com.flj.freelojobs;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+
+    private SharedPreferences settings;
+    private EditText et1;
+    private String usuarioGlobal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +27,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 //        Toast.makeText(this, "Método onCreate()", Toast.LENGTH_LONG).show();
         Log.i("Información", "Esto es una Prueba");
-    }
 
+        cargarDatoos();
+    }
+    public void cargarDatoos(){
+//        et1 = (EditText) findViewById(R.id.txtnomusu2);
+        settings = getSharedPreferences("id", Context.MODE_PRIVATE);
+        String valor = settings.getString("user_id", "");
+        usuarioGlobal=valor;
+        Log.i("-------------valor:",valor);
+    }
     public void goToActivityProducto(View view) {
         Intent newIntent = new Intent(this, ProductoActivity.class);
 //        newIntent.putExtra("msg", "Hola MinTIC");
@@ -59,6 +74,16 @@ public class MainActivity extends AppCompatActivity {
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(newIntent);
         }
+        else if(id == R.id.mnu_micuentaadmin) {
+            Intent newIntent = new Intent(this, listausuariosActivity.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+        }
+        else if(id == R.id.mnu_listadegfreelos) {
+            Intent newIntent = new Intent(this, ListadodeFreelosActivity.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(newIntent);
+        }
         return super.onOptionsItemSelected(menuItem);
     }
 
@@ -72,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
                     .setPositiveButton("Si", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int i) {
+                            finishAffinity();
                             MainActivity.this.finish();
                         }
                     }).show();

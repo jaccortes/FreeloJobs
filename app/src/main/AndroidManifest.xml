@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ic_jobs6_foreground"
         android:supportsRtl="true"
         android:theme="@style/Theme.HolaMundo">
+
+        <activity
+            android:name=".ListadodeFreelosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".listausuariosActivity"
+            android:exported="false" />
         <activity
             android:name=".MisFreelosActivity"
             android:exported="false"

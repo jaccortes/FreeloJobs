@@ -9,46 +9,71 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:contextClickable="false"
         android:orientation="vertical"
         tools:context=".MiCuentaActivity">
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:text="@string/mi_cuenta"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#173B67"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="#C10B2E59"
+            android:background="#C16BA9F6"
+            android:contentDescription="@string/banner"
             android:scaleType="fitCenter"
-            app:srcCompat="?android:attr/fingerprintAuthDrawable" />
+            app:srcCompat="@mipmap/ic_freelojobs_icon" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Nombre"
-        android:inputType="textPersonName"
-        android:minHeight="48dp" />
+        <TextView
+            android:id="@+id/txtnomusu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0E2F49"
+            android:minHeight="48dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textColor="#EDEFEF"
+            android:textSize="24sp"
+            tools:text="nombre" />
 
-    <EditText
-        android:id="@+id/editTextPhone2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Telefóno"
-        android:inputType="phone"
-        android:maxLength="10"
-        android:minHeight="48dp" />
+        <TextView
+            android:id="@+id/txttelfusu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0E2F49"
+            android:minHeight="48dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textColor="#EDEFEF"
+            android:textSize="24sp"
+            tools:text="telf" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Correo electrónico"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp" />
+        <TextView
+            android:id="@+id/txtcorreousu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0E2F49"
+            android:minHeight="48dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textColor="#EDEFEF"
+            android:textSize="24sp"
+            tools:text="mail" />
     </LinearLayout>
 </ScrollView>

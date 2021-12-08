@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Html;
@@ -21,6 +23,9 @@ public class LoginActivity extends AppCompatActivity {
     private EditText et1, et2;
     private ImageView iv1;
     private Button b1;
+    private MyDBSQLiteHelper databasehelp;
+    private SQLiteDatabase db;
+    private Cursor filas;
 
     private SharedPreferences settings;
 
@@ -64,18 +69,18 @@ public class LoginActivity extends AppCompatActivity {
         txtRegisterse.setTextColor(Color.BLUE);
         txtRegisterse.setText(getString(R.string.app_name_login_registrarse));
 
-//        txtRegisterse.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                SharedPreferences.Editor editor = settings.edit();
-//                editor.putString("user", et1.getText().toString());
-//                editor.putString("pass", et2.getText().toString());
-//                editor.commit();
-//
-//                et1.setText("");
-//                et2.setText("");
-//            }
-//        });
+/*        txtRegisterse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences.Editor editor = settings.edit();
+                editor.putString("user", et1.getText().toString());
+                editor.putString("pass", et2.getText().toString());
+                editor.commit();
+
+                et1.setText("");
+                et2.setText("");
+            }
+        });*/
     }
 
     public void goToRegistrese(View view){
@@ -86,22 +91,43 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intencionRegistrese);
     }
     public void iniciarSesion(View view) {
-        String usuario = et1.getText().toString();
-        String clave = et2.getText().toString();
-        if (et1.getText().toString().equals("a") && et2.getText().toString().equals("a")) {
-            Intent newIntent = new Intent(this, MainActivity.class);
-            startActivity(newIntent);
-            finish();
-        } else {
-            Toast.makeText(LoginActivity.this, "Datos incorrectos", Toast.LENGTH_SHORT).show();
-            et1.requestFocus();
-        }
+
+        Intent newIntent = new Intent(this, MainActivity.class);
+        startActivity(newIntent);
+
         if (et1.getText().toString().equals("")) {
             Toast.makeText(LoginActivity.this, "Por favor, ingrese el usuario", Toast.LENGTH_SHORT).show();
             et1.requestFocus();
-        } else if (et2.getText().toString().equals("")) {
-            Toast.makeText(LoginActivity.this, "Por favor, ingrese la contraseña", Toast.LENGTH_SHORT).show();
-            et2.requestFocus();
+            return;
         }
+        if (et2.getText().toString().equals("")) {
+            Toast.makeText(LoginActivity.this, "Por favor, ingrese el password", Toast.LENGTH_SHORT).show();
+            et1.requestFocus();
+            return;
+        }
+
+        String celular = et1.getText().toString();
+        String clave = et2.getText().toString();
+
+
+
+        /*databasehelp = new MyDBSQLiteHelper(this, vars.nomDB_usu, null, vars.version);
+        db = databasehelp.getReadableDatabase();
+        filas = db.rawQuery("SELECT * FROM "+vars.nomDB_usu+" WHERE use_pass='"+clave+"' and use_phon='"+celular+"'",null);
+        if(filas.moveToFirst()){
+
+            SharedPreferences.Editor editor = settings.edit();
+            editor.putString("user_id", filas.getString(0));
+            editor.commit();
+
+            Intent newIntent = new Intent(this, MainActivity.class);
+            startActivity(newIntent);
+        }else {
+            Toast.makeText(LoginActivity.this, "Datos incorrectos", Toast.LENGTH_SHORT).show();
+            et1.requestFocus();
+        }
+
+        db.close();
+*/
     }
 }

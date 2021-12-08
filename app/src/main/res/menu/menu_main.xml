@@ -24,4 +24,10 @@
     <item
         android:id="@+id/mnu_micuenta"
         android:title="@string/Micuenta" />
+    <item
+        android:id="@+id/mnu_micuentaadmin"
+        android:title="@string/Micuentaadmin" />
+    <item
+        android:id="@+id/mnu_listadegfreelos"
+        android:title="@string/lista_de_freelos_administrador"/>
 </menu>

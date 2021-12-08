@@ -37,7 +37,7 @@ public class CamaraActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camara);
 
-        admin = new MyDBSQLiteHelper(this, vars.nomDB, null, vars.version);
+        //admin = new MyDBSQLiteHelper(this, vars.nomDB, null, vars.version);
 
         txtDescripcion = findViewById(R.id.txtDescripcion);
         btnCamara = findViewById(R.id.btnCamara);

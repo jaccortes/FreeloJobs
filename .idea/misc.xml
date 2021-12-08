@@ -10,19 +10,21 @@
         <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/drawable/ic_jobsearch3_background.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/drawable/ic_jobsearch_background.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_apirest.xml" value="0.1" />
-        <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_buscar_freelo.xml" value="0.33" />
+        <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_buscar_freelo.xml" value="0.1301518438177874" />
         <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_camara.xml" value="0.1" />
         <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_crear_freelo.xml" value="0.25" />
         <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_encuesta.xml" value="0.33" />
         <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_horizontal_scrollview.xml" value="0.1" />
         <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_list_view.xml" value="0.1" />
+        <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_listadode_freelos.xml" value="0.15625" />
+        <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_listausuarios.xml" value="0.1078125" />
         <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_login.xml" value="0.20253164556962025" />
         <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_main2.xml" value="0.1" />
-        <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_mi_cuenta.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_mi_cuenta.xml" value="0.33" />
         <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_mis_freelos.xml" value="0.23020833333333332" />
         <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_producto.xml" value="0.22" />
-        <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_registrese.xml" value="0.25" />
+        <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_registrese.xml" value="0.33" />
         <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_scrolling.xml" value="0.11822916666666666" />
         <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_scrollview.xml" value="0.1" />
         <entry key="..\:/Users/cortesjaih/AndroidStudioProjects/FreeloJobs/app/src/main/res/layout/activity_splash_screen.xml" value="0.18" />
